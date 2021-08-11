@@ -13,5 +13,16 @@
     <body>
         <h1>Hello World</h1>
         <p>test</p>
+        <button id="addToCartButton">CompletePayment</button>
+        <script type="text/javascript">
+        document.getElementById("addToCartButton").onclick = function(){
+            ttq.track('AddToCart',{  
+            content_id: '301',
+            quantity: 1,
+            price: 8,
+            value: 9.2,
+            currency: 'USD',})
+        }
+        </script>
     </body>
 </html>
