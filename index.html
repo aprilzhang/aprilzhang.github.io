@@ -25,13 +25,19 @@
         <button id="addToCartButton">CompletePayment</button>
         <script type="text/javascript">
         document.getElementById("addToCartButton").onclick = function(){
+            ttq.identify({
+                external_id: '123',
+                email: 'foo@bar.com',
+                phone_number: '+19171234567',
+            })
+
             ttq.track('AddToCart',{  
-            content_id: '301',
-            quantity: 1,
-            price: 8,
-            value: 9.2,
-            currency: 'USD',})
-        }
+                content_id: '301',
+                quantity: 1,
+                price: 8,
+                value: 9.2,
+                currency: 'USD',})
+            }
         </script>
     </body>
 </html>
