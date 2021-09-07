@@ -25,10 +25,7 @@
         <button id="addToCartButton">CompletePayment</button>
         <script type="text/javascript">
         document.getElementById("addToCartButton").onclick = function(){
-            ttq.identify({
-                external_id: '123',
-                email: 'foo@bar.com',
-            })
+            ttq.identify({sha256_email: 'd5c2706bbd3cd97e5c835972999b3f7bdc36703f80370ca18baa51f1c4ab8ced', sha256_phone_number: '7af87dd94e1187579818739230965dee6e025ea02bdbd79546907cc121589e3f'});
             ttq.track('Browse')
             ttq.track('AddToCart',{  
                 content_id: '301',
@@ -37,6 +34,7 @@
                 value: 9.2,
                 currency: 'USD',})
             }
+            
         </script>
     </body>
 </html>
